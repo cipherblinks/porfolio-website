@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-button-dark: #232325;
+  --font-script: "Great Vibes", cursive;
+  --breakpoint-sm: 30rem;
+  --breakpoint-md: 51rem;
+  --breakpoint-lg: 75rem;
+  --border-color: var(--token-881bd875-3cac-4aee-90a6-77f2f1c7d3a3, rgba(255, 255, 255, 0.1));
+  --tracking-2: 0.02em;
+  --primary-text: white;
+}  
+
+@layer base {
+  body {
+    font-family: "Inter", "Inter Placeholder", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Add your custom shadow */
+@layer utilities {
+.shadow-custom {
+  box-shadow: rgba(168, 168, 181, 0.6) -1px 1px 0px 0px inset, 
+  rgb(46, 46, 48) 0px 0px 0px 1px inset, 
+  rgba(0, 0, 0, 0.21) 0px 0.722625px 0.5781px -0.416667px, 
+  rgba(0, 0, 0, 0.27) 0px 2.74624px 2.19699px -0.833333px, 
+  rgba(0, 0, 0, 0.56) 0px 12px 9.6px -1.25px;
+};
+.button-bg {
+  background: linear-gradient(215deg, rgb(43, 43, 46) 0%, rgb(43, 43, 46) 13%, 
+  rgb(168, 168, 181) 20%, rgb(73, 73, 77) 40%, 
+  rgb(43, 43, 46) 62.1622%, rgb(43, 43, 46) 100%);
+
+}
+.div-btn {
+  background: linear-gradient(rgb(26, 26, 28) 0%, rgb(11, 11, 13) 100%);
+}
+.nav-background-color{
+  background-color: rgba(0, 0, 0, 0.6);
+};
+.border-custom {
+  border-color: var(--border-color);
+}
+}
+
+@layer components {
+.fancy-link {
+  @apply no-underline transition-colors duration-400 
+         [transition-timing-function:cubic-bezier(.44,0,.56,1)] 
+         hover:text-[#ff4625] cursor-pointer hover:underline;
+}
+.fancy-link-nav {
+  @apply no-underline transition-colors duration-400 
+         [transition-timing-function:cubic-bezier(.44,0,.56,1)] 
+         hover:text-[#ff4625] cursor-pointer;
+}
+.footer-fancy-link-nav {
+  @apply no-underline transition-colors duration-400 
+         [transition-timing-function:cubic-bezier(.44,0,.56,1)] 
+         hover:text-[#ffffff] cursor-pointer hover:underline;
+}
+.div-btn-flash {
+  @apply absolute left-0 h-[126px] w-[40px] 
+         bg-[linear-gradient(270deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.2)_46.8416%,rgba(255,255,255,0)_100%)]
+         origin-center opacity-0 
+         rotate-[15deg];
+}
+}
+
+@keyframes flash {
+  0%   { transform: translateY(100%); opacity: 0; }
+  10%  { opacity: 1; }
+  70%  { transform: translateY(-5600%); opacity: 1; }
+  100% { opacity: 0; transform: translateY(-5600%); }
+}
+
+@keyframes flashSlow {
+  0%   { transform: translateX(-150%); opacity: 0; }
+  10%  { opacity: 0; }
+  30%  { opacity: 1; }
+  60%  { transform: translateX(1150%); opacity: 1; }
+  100% { transform: translateX(1150%); opacity: 0; }
+}
+
+/* attach delay + slower duration */
+.group:hover .div-btn-flash {
+  animation: flashSlow 2.5s ease-in-out 0.8s infinite; /* 2.5s duration + 0.8s delay */
+}
+
+
+.animate-flash {
+  animation: flash 4s linear infinite;
+}
+
+
+.delay-offset {
+  animation-delay: 1s; /* keeps the offset every loop */
+}
+
+@keyframes scrollIcons {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  display: flex;
+  animation: scrollIcons 80s linear infinite;
+}
+
+/* Pause + blur on hover */
+.scroll-container:hover {
+  filter: blur(7px);
+}
+
+.mask-fade-x {
+  mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgb(0,0,0) 25%, rgb(0,0,0) 75%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgb(0,0,0) 25%, rgb(0,0,0) 75%, rgba(0,0,0,0) 100%);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.scroll-slide-up {
+  animation: slideUp linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
