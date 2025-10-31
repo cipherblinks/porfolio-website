@@ -7,8 +7,8 @@ function Footer() {
         <>
             <section className="flex items-start flex-col justify-start overflow-visible gap-[10px] text-white w-full md:max-w-[1500px] 
             px-[16px] md:px-[32px] lg:px-[64px] md:py-[80px] mt-15 md:mt-15 lg:mt-22 relative">
-                <div className="bg-[rgb(255,70,37)] blur-[100px] rounded-[999px] w-[500px] h-[56px] absolute bottom-[-25px] opacity-[1] overflow-hidden left-[calc(26.04166666666669%-500px/2)]"></div>
-                <div className="bg-[rgb(37,88,255)] blur-[100px] rounded-[999px] w-[653px] h-[31px] absolute bottom-[-26px] opacity-[1] overflow-hidden left-[calc(37.361111111111136%-653px/2)]"></div>
+                <div className="bg-[rgb(255,70,37)] blur-[100px] rounded-[999px] w-[500px] h-[86px] absolute bottom-[-25px] opacity-[1] overflow-hidden left-[calc(26.04166666666669%-500px/2)]"></div>
+                <div className="bg-[rgb(37,88,255)] blur-[100px] rounded-[999px] w-[653px] h-[61px] absolute bottom-[-26px] opacity-[1] overflow-hidden left-[calc(37.361111111111136%-653px/2)]"></div>
                 <div className="flex items-start flex-col md:flex-row gap-[34px] md:gap-[24px] pt-[50px] pb-[40px] md:pt-[120px] md:pb-[80px] overflow-visible justify-center flex-nowrap 
                 relative w-full border-t border-b border-[rgba(255,255,255,.2)]">
                     <div className="flex flex-col items-start justify-center w-[400px] h-full gap-[24px]">
