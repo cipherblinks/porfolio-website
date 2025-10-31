@@ -1,3 +1,12 @@
+import cssLogoImage from '/src/assets/images/css.png'
+import htmlLogoImage from '/src/assets/images/html.png'
+import javascriptLogoImage from '/src/assets/images/js.png'
+import expressJSLogoImage from '/src/assets/images/expressJS.png'
+import nodeJSLogoImage from '/src/assets/images/node.png'
+import tailwindLogoImage from '/src/assets/images/tailwind.png'
+import reactLogoImage from '/src/assets/images/react.png'
+import bootstrapLogoImage from '/src/assets/images/bootstrap.png'
+
 function ProjectList() {
     return (
         <section className="flex items-center justify-center px-[16px] md:px-[42px] lg:px-[64px] w-full max-w-[1440px] md:max-w-[1440px] py-[40px] md:py-[120px] mx-auto overflow-hidden relative">
@@ -9,68 +18,68 @@ function ProjectList() {
 
                                 <div className="flex items-center">
                                     <div className="h-[22px] w-[205px] flex items-center text-lg font-semibold">
-                                        <img src="/src/assets/images/css.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={cssLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">CSS</h1>
                                     </div>
                                     <div className="h-[22px] w-[205px] flex items-center text-lg font-semibold">
-                                        <img src="/src/assets/images/html.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={htmlLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">HTML</h1>
                                     </div>
                                     <div className="h-[22px] w-[205px] flex items-center">
-                                        <img src="/src/assets/images/js.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={javascriptLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">Javascript</h1>
                                     </div>
                                     <div className="h-[22px] w-[205px] flex items-center text-lg font-semibold">
-                                        <img src="/src/assets/images/expressJS.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={expressJSLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">Express JS</h1>
                                     </div>
                                     <div className="h-[22px] w-[205px] flex items-center">
-                                        <img src="/src/assets/images/node.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={nodeJSLogoImage} alt="" className="h-[40px] w-[205]" />
                                     </div>
                                     <div className="h-[22px] w-[205px] flex items-center text-lg font-semibold">
-                                        <img src="/src/assets/images/react.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={reactLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">React JS</h1>
                                     </div>
                                     <div className="h-[22px] w-[205px] flex items-center text-lg font-semibold">
-                                        <img src="/src/assets/images/tailwind.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={tailwindLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">Tailwind CSS</h1>
                                     </div>
                                     <div className="h-[22px] w-[205px] flex items-center text-lg font-semibold">
-                                        <img src="/src/assets/images/bootstrap.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={bootstrapLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">Bootstrap</h1>
                                     </div>
                                 </div>
 
                                 <div className="flex items-center">
                                     <div className="h-[22px] w-[205px] flex items-center text-lg font-semibold">
-                                        <img src="/src/assets/images/css.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={cssLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">CSS</h1>
                                     </div>
                                     <div className="h-[22px] w-[205px] flex items-center text-lg font-semibold">
-                                        <img src="/src/assets/images/html.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={htmlLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">HTML</h1>
                                     </div>
                                     <div className="h-[22px] w-[205px] flex items-center">
-                                        <img src="/src/assets/images/js.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={javascriptLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">Javascript</h1>
                                     </div>
                                     <div className="h-[22px] w-[205px] flex items-center text-lg font-semibold">
-                                        <img src="/src/assets/images/expressJS.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={expressJSLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">Express JS</h1>
                                     </div>
                                     <div className="h-[22px] w-[205px] flex items-center">
-                                        <img src="/src/assets/images/node.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={nodeJSLogoImage} alt="" className="h-[40px] w-[205]" />
                                     </div>
                                     <div className="h-[22px] w-[205px] flex items-center text-lg font-semibold">
-                                        <img src="/src/assets/images/react.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={reactLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">React JS</h1>
                                     </div>
                                     <div className="h-[22px] w-[205px] flex items-center text-lg font-semibold">
-                                        <img src="/src/assets/images/tailwind.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={tailwindLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">Tailwind CSS</h1>
                                     </div>
                                     <div className="h-[22px] w-[205px] flex items-center text-lg font-semibold">
-                                        <img src="/src/assets/images/bootstrap.png" alt="" className="h-[40px] w-[205]" />
+                                        <img src={bootstrapLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">Bootstrap</h1>
                                     </div>
                                 </div>

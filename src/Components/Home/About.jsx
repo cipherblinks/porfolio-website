@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { slideUpOnScroll } from "../..";
 import Button from "./Button"
+import aboutImage from "/src/assets/images/my.jpg"
 
 function About() {
     useEffect(() => {
@@ -62,7 +63,7 @@ function About() {
                     <div className="flex items-center flex-nowrap w-full lg:w-min h-min rounded-[24px] justify-center overflow-hidden p-px relative bg-[linear-gradient(214deg,rgb(43,43,46)_0%,rgb(43,43,46)_9%,rgb(168,168,181)_20%,rgb(73,73,77)_40%,rgb(43,43,46)_62.1622%,rgb(43,43,46)_100%)]">
                         <div className="flex-1 md:flex-none w-full h-[400px] md:h-[600px] lg:h-[700px] lg:w-[510px] relative rounded-[23px]">
                             <div className="absolute inset-0">
-                                <img src="/src/assets/images/my.jpg" alt="" className="w-full h-full object-center object-cover rounded-[23px]" />
+                                <img src={aboutImage} alt="" className="w-full h-full object-center object-cover rounded-[23px]" />
                             </div>
                         </div>
                     </div>

@@ -2,6 +2,10 @@ import { useEffect } from "react";
 import { animateEachSectionUp, scrollAnimateText } from "../..";
 import CustomCursor from "../CustomCursor";
 import VenturesCard from "../VenturesCard";
+import logoIcon from "/src/assets/images/logo.svg";
+import veturesImage1 from '/src/assets/images/ai.avif'
+import veturesImage2 from '/src/assets/images/prime.avif'
+import veturesImage3 from '/src/assets/images/Thalio.avif'
 
 function Ventures() {
     useEffect(() => {
@@ -22,25 +26,25 @@ function Ventures() {
                         </div>
                         <div className="flex gap-3 items-center relative">
                             <h5 className="text-3xl md:text-7xl lg:text-8xl font-bold leading-8 md:leading-[106px] ventures-heading">Ventures</h5>
-                            <img src="/src/assets/images/logo.svg" alt="" className="size-8 mb-4 absolute bottom-12 md:left-74 lg:left-98" />
+                            <img src={logoIcon} alt="" className="size-8 mb-4 absolute bottom-12 md:left-74 lg:left-98" />
                         </div>
                     </div>
 
                     <div className="flex items-center flex-col flex-wrap gap-[16px]">
                         <VenturesCard
-                            image='/src/assets/images/ai.avif'
+                            image={veturesImage1}
                             heading='Backend Development Masterclass'
                             paragraph='Learn how to build robust, scalable backend systems using Node.js, Express, and databases like MongoDB or PostgreSQL. 
                                        Understand APIs, authentication, and performance optimization from scratch. '
                         />
                         <VenturesCard
-                            image='/src/assets/images/prime.avif'
+                            image={veturesImage2}
                             heading='Frontend Development Masterclass'
                             paragraph='Master the art of modern frontend development with React, Tailwind CSS, and Next.js. 
                                        Learn how to create fast, responsive, and elegant web interfaces that stand out.'
                         />
                         <VenturesCard
-                            image='/src/assets/images/Thalio.avif'
+                            image={veturesImage3}
                             heading='AI for Developers Masterclass'
                             paragraph='Learn how to integrate AI tools and APIs into your workflow. Build smart applications with OpenAI, LangChain, and TensorFlow 
                                        to enhance productivity and innovation as a developer.'

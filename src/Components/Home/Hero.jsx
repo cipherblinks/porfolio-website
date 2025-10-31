@@ -1,7 +1,8 @@
 import { useEffect } from "react"
 import { animateText } from "../.."
 import Button from "./Button"
-import logo from "/src/assets/images/logo.svg";
+import logoIcon from "/src/assets/images/logo.svg";
+import heroImage from '/src/assets/images/hero-image.png'
 
 function Hero() {
     useEffect(() => {
@@ -44,7 +45,7 @@ function Hero() {
 
                     <div className="absolute h-[16px] w-[16px] md:h-[32px] md:w-[32px] top-0 right-[-14px] md:right-[-15px] md:top-[50px]">
                         <div className="absolute inset-0">
-                            <img src={logo} alt="" className="w-full h-full object-center object-cover" />
+                            <img src={logoIcon} alt="" className="w-full h-full object-center object-cover" />
                         </div>
                     </div>
                     <div className="flex flex-col justify-start shrink-0 self-stretch relative h-auto w-full md:w-auto whitespace-pre-wrap wrap-break-word max-w-[520px] lg:max-w-lg">
@@ -103,7 +104,7 @@ function Hero() {
                 </div>
                 <div className="h-[80vh] opacity-[.8] md:h-screen overflow-hidden w-full absolute top-0 -right-[112px] md:-right-[302px] lg:-right-[262px]">
                     <div className="absolute inset-0">
-                        <img src="/src/assets/images/hero-image.png" alt="Profile" className="block w-full h-full object-center object-cover md:object-contain " />
+                        <img src={heroImage} alt="Profile" className="block w-full h-full object-center object-cover md:object-contain " />
                     </div>
 
                 </div>

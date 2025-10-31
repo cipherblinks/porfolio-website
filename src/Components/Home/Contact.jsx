@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { scrollAnimateText } from "../.."
+import logoIcon from "/src/assets/images/logo.svg";
 
 function Contact() {
     useEffect(() => {
@@ -18,7 +19,7 @@ function Contact() {
                         </div>
                         <div className="flex gap-3 items-center relative">
                             <h5 className="text-3xl md:text-8xl font-bold leading-8 md:leading-[106px] contact-subHeading">Level up your business</h5>
-                            <img src="/src/assets/images/logo.svg" alt="" className="size-8 mb-4 absolute bottom-12 -right-5" />
+                            <img src={logoIcon} alt="" className="size-8 mb-4 absolute bottom-12 -right-5" />
                         </div>
                     </div>
 

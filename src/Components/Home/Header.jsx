@@ -1,4 +1,5 @@
 import Button from "./Button"
+import logoIcon from "/src/assets/images/logo.svg";
 
 function Header() {
     return (
@@ -14,7 +15,7 @@ function Header() {
                                 <p className="">
                                     <a href="" className="fancy-link text-2xl font-font-medium leading-[1.6em]">Cipherblinks</a>
                                 </p>
-                                <img src="/src/assets/images/logo.svg" alt="" className="size-3 mb-4" />
+                                <img src={logoIcon} alt="" className="size-3 mb-4" />
                             </div>
                             {/* <!-- menu --> */}
                             <ul

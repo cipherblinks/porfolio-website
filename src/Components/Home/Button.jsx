@@ -1,3 +1,5 @@
+import buttonPointer from '/src/assets/images/here-pointer.svg'
+
 function Button(props) {
     return (
         <>
@@ -11,7 +13,7 @@ function Button(props) {
                     <button className="text-sm md:text-base font-light md:font-medium tracking-tighter cursor-pointer">{props.name}</button>
 
                     <div className={`${props.icon ? 'block' : 'hidden'}`}>
-                        <img src="/src/assets/images/here-pointer.svg" alt=""
+                        <img src={buttonPointer} alt=""
                             className="origin-center will-change-transform -rotate-45 transition-transform duration-300 group-hover:rotate-0" />
                     </div>
 

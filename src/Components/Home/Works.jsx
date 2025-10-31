@@ -2,7 +2,10 @@ import About from "./About"
 import WorkFeatures from "./WorksFeatures"
 import { scrollAnimateText } from "../.."
 import { useEffect } from "react";
-
+import work2 from '/src/assets/works/work2.png'
+import work1 from '/src/assets/works/project1.webp'
+import work3 from '/src/assets/works/project3.webp'
+import work4 from '/src/assets/works/project2.webp'
 
 function Works() {
     useEffect(() => {
@@ -27,10 +30,10 @@ function Works() {
                     </div>
 
                     <div className="flex items-center w-full flex-col flex-wrap gap-[16px] relative md:grid md:content-center lg:gap-8 md:auto-rows-fr md:grid-cols-[repeat(2,minmax(50px,1fr))]">
-                        <WorkFeatures image='/src/assets/works/work2.png' featured='FEATURED' heading='Real Estate Portfolio Website' paragraph='A sleek Estate portfolio website' />
-                        <WorkFeatures image='/src/assets/works/project3.webp' heading='Sales Consulting Agency' paragraph='A sales consulting agencies website' />
-                        <WorkFeatures image='/src/assets/works/project1.webp' heading='Modern eCommerce Template' paragraph='A sleek modern eCommerce' />
-                        <WorkFeatures image='/src/assets/works/project2.webp' heading='Crypto SaaS Website' paragraph='A exchanges Crypto Platforms' />
+                        <WorkFeatures image={work2} featured='FEATURED' heading='Real Estate Portfolio Website' paragraph='A sleek Estate portfolio website' />
+                        <WorkFeatures image={work3} heading='Sales Consulting Agency' paragraph='A sales consulting agencies website' />
+                        <WorkFeatures image={work1} heading='Modern eCommerce Template' paragraph='A sleek modern eCommerce' />
+                        <WorkFeatures image={work4} heading='Crypto SaaS Website' paragraph='A exchanges Crypto Platforms' />
                     </div>
                 </div>
             </section>

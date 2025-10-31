@@ -1,4 +1,5 @@
 import Button from "./Button"
+import logoIcon from "/src/assets/images/logo.svg";
 
 function Footer() {
     return (
@@ -16,7 +17,7 @@ function Footer() {
                             </div>
                             <div className="flex gap-3 items-center relative">
                                 <h5 className="text-3xl md:text-5xl font-bold leading-[1.1em] tracking-[-0.01em]">Blinks</h5>
-                                <img src="/src/assets/images/logo.svg" alt="" className="size-4 absolute bottom-8 -right-4" />
+                                <img src={logoIcon} alt="" className="size-4 absolute bottom-8 -right-4" />
                             </div>
                             <div className="flex shrink-0 items-start w-full relative">
                                 <p className="font-medium text-base text-[rgba(255,255,255,.7)] leading-[1.4em]">
