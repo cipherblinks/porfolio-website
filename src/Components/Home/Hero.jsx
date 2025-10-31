@@ -11,14 +11,14 @@ function Hero() {
     return (
         <>
             <section
-                className="flex flex-row flex-nowrap items-end h-screen content-start pt-0 px-[16px] md:px-[22px] lg:px-[64px] pb-[64px] md:pb-[120px] relative overflow-visible max-w-[1440px] w-full text-(--primary-text)">
+                className="flex flex-row flex-nowrap items-end h-screen content-start pt-0 px-[16px] md:px-[32px] lg:px-[64px] pb-[64px] md:pb-[120px] relative overflow-visible max-w-[1440px] w-full text-(--primary-text)">
                 <div className="bg-[#ff4625] h-[80px] absolute top-[-35px] left-76 w-[500px] blur-[100px] -z-10"></div>
                 <div className="bg-[#2558ff] rounded-[999px] flex-none h-[60px] left-[550px] overflow-hidden absolute -z-10 top-[-42px] w-[600px] blur-[100px]"></div>
                 {/* <!-- left content --> */}
                 <div className="flex items-start justify-center flex-nowrap p-0 overflow-visible relative w-[80%] md:w-min flex-col gap-[8px] z-5">
                     <div className="flex justify-start flex-col shrink-0">
                         <p
-                            className="subtext text-xs md:text-sm font-bold tracking-widest uppercase text-(--token-99439536-6d6e-4d77-be47-ec859ea473e3,rgba(255,255,255,0.4)) font-family">
+                            className="subtext text-xs lg:text-sm font-bold tracking-widest uppercase text-(--token-99439536-6d6e-4d77-be47-ec859ea473e3,rgba(255,255,255,0.4)) font-family">
                             <span className="text-[#ffffffb3]">Senior</span> <span>Fullstack</span> <span className="text-[#ffffffb3]">Web </span><span>Developer</span>
                         </p>
                     </div>
@@ -46,13 +46,12 @@ function Hero() {
                             <img src="/src/assets/images/logo.svg" alt="" className="w-full h-full object-center object-cover" />
                         </div>
                     </div>
-                    <div className="flex flex-col justify-start shrink-0 self-stretch relative h-auto w-full md:w-auto whitespace-pre-wrap wrap-break-word md:max-w-lg">
-                        <p className="leading-[1.4em] md:leading-6 text-[#ffffffb3] font-medium text-sm md:text-base">
+                    <div className="flex flex-col justify-start shrink-0 self-stretch relative h-auto w-full md:w-auto whitespace-pre-wrap wrap-break-word max-w-[520px] lg:max-w-lg">
+                        <p className="leading-[1.4em] md:leading-6 text-[#ffffffb3] font-medium text-sm lg:text-base">
                             Call me Blinks a Senior FullStack Web Developer with 4+ years of experience
                             building fintech startups. I specialize in data driven design and a thoughtful,
                             intentional approach that delivers measurable results.
                         </p>
-
                     </div>
 
                     <div className="flex flex-col md:flex-row items-start md:items-center gap-8 mt-8">
@@ -101,7 +100,7 @@ function Hero() {
                         <div className="bg-white/10 h-full w-px relative overflow-visible"></div>
                     </div>
                 </div>
-                <div className="h-[80vh] opacity-[.8] md:h-screen overflow-hidden w-full absolute top-0 -right-[112px] md:-right-[262px]">
+                <div className="h-[80vh] opacity-[.8] md:h-screen overflow-hidden w-full absolute top-0 -right-[112px] md:-right-[302px] lg:-right-[262px]">
                     <div className="absolute inset-0">
                         <img src="/src/assets/images/hero-image.png" alt="Profile" className="block w-full h-full object-center object-cover md:object-contain " />
                     </div>

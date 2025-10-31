@@ -14,30 +14,30 @@ function Service() {
     return (
         <>
             {/* service */}
-            <section className="flex flex-col gap-20 md:gap-25 text-white md:max-w-[1500px] mx-auto w-full px-[16px] md:px-20 mt-20 md:mt-32">
+            <section className="flex flex-col gap-20 md:gap-25 text-white md:max-w-[1500px] mx-auto w-full px-[16px] md:px-[42px] lg:px-[64px] mt-20 lg:mt-32">
                 <div>
                     <div className="flex gap-3 items-center relative">
-                        <img src="/src/assets/images/logo.svg" alt="" className="size-8 mb-4 absolute bottom-2 md:-left-6" />
-                        <p className="text-xs md:text-sm text-[rgba(255,255,255,0.6)] font-bold uppercase leading-[1.3em] tracking-widest service-subHeading">Level Up Your BUSINESS</p>
+                        <img src="/src/assets/images/logo.svg" alt="" className="size-8 mb-4 absolute bottom-2 -left-6 md:left-0 hidden md:block" />
+                        <p className="text-xs lg:text-sm text-[rgba(255,255,255,0.6)] font-bold uppercase leading-[1.3em] tracking-widest service-subHeading">Level Up Your BUSINESS</p>
                     </div>
-                    <h5 className="text-3xl md:text-8xl font-bold leading-8 md:leading-[106px] service-heading">
+                    <h5 className="text-3xl md:text-7xl lg:text-8xl font-bold leading-8 md:leading-[106px] service-heading">
                         Services
                     </h5>
                 </div>
 
-                <div className="flex flex-col md:flex-row gap-20 md:gap-5 ">
+                <div className="flex flex-col lg:flex-row gap-20 md:gap-10 lg:gap-5 ">
                     <div className="flex flex-col gap-5">
                         <div>
                             <img src="/src/assets/images/frontend.avif" alt="" className="h-16" />
                         </div>
                         <div className="flex flex-col gap-2">
-                            <h5 className="font-bold text-2xl lg:text-[32px] leading-[1.4em] font-[Inter_Display] kkk">Frontend Development</h5>
+                            <h5 className="font-bold text-2xl lg:text-[32px] leading-[1.4em] font-[Inter_Display]">Frontend Development</h5>
                             <p className="text-sm font-semibold leading-[1.4em] tracking-0 text-[rgba(255,255,255,0.6)] whitespace-pre-wrap">
                                 Official Frontend web Expert creating custom web solutions that converts.
                                 Engage your clients with visually striking and functional experiences.
                                 Full assistance with site publication included.
                             </p>
-                            <p className="text-[rgba(255,255,255,0.7)] md:ext-base font-semibold leading-[1.4em] text-sm">From 200 USD</p>
+                            <p className="text-[rgba(255,255,255,0.7)] md:text-base font-semibold leading-[1.4em] text-sm">From 200 USD</p>
                         </div>
                         <div>
                             <Button name={`Book a call`} icon={true} />

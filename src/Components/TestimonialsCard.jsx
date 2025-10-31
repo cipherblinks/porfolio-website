@@ -36,7 +36,7 @@ function TestimonialsCard(props) {
 
                 </div>
                 <div>
-                    <p className="text-base font-semibold leading-[1.4em] text-center">
+                    <p className="text-sm lg:text-base lg:font-semibold leading-[1.4em] text-center">
                         {props.comment}
                     </p>
                 </div>
@@ -44,14 +44,14 @@ function TestimonialsCard(props) {
                 <div className="flex flex-col items-center justify-center overflow-hidden relative w-full ">
                     <div className="flex items-center flex-col justify-start overflow-hidden relative">
                         <div className="flex items-center justify-start relative overflow-hidden gap-[8px]">
-                            <p className="text-sm font-semibold leading-[1.6em]">{props.name}</p>
-                            <p className="text-sm font-semibold leading-[1.6em]">•</p>
-                            <p className="text-sm font-semibold leading-[1.6em]">{props.role}</p>
+                            <p className="text-sm lg:text-base lg:font-semibold leading-[1.6em]">{props.name}</p>
+                            <p className="text-sm lg:text-base lg:font-semibold leading-[1.6em]">•</p>
+                            <p className="text-sm lg:text-base lg:font-semibold leading-[1.6em]">{props.role}</p>
                         </div>
                     </div>
 
                     <div>
-                        <p className="text-[rgba(255,255,255,.6)] text-sm font-semibold leading-[1.6em]">{props.company}</p>
+                        <p className="text-[rgba(255,255,255,.6)] text-sm lg:text-base lg:font-semibold leading-[1.6em]">{props.company}</p>
                     </div>
                 </div>
             </div>

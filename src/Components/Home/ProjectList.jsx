@@ -1,6 +1,6 @@
 function ProjectList() {
     return (
-        <section className="flex items-center justify-center px-[16px] md:px-[64px] w-full max-w-[1440px] md:max-w-[1440px] py-[40px] md:py-[120px] mx-auto overflow-hidden relative">
+        <section className="flex items-center justify-center px-[16px] md:px-[42px] lg:px-[64px] w-full max-w-[1440px] md:max-w-[1440px] py-[40px] md:py-[120px] mx-auto overflow-hidden relative">
             <div className="flex items-start flex-1 flex-col gap-[8px] w-full flex-nowrap justify-center max-w-[1226px] overflow-visible p-0 scroll-container cursor-pointer">
                 <div className="flex-none h-[40px] w-full relative">
                     <a href="" className="h-full w-full overflow-hidden relative">

@@ -5,8 +5,8 @@ function WorkFeatures(props) {
             <CustomCursor selector=".use-custom-cursor" />
             <div className="flex items-center flex-col gap-[32px] w-full justify-start flex-nowrap self-center justify-self-start relative group ">
                 <div className="relative w-full h-auto">
-                    <a className="use-custom-cursor flex items-center flex-col overflow-hidden relative h-[320px] md:h-[563px] justify-center
-                    w-full md:w-[400px] lg:w-full p-px rounded-[24px] bg-[linear-gradient(214deg,rgb(43,43,46)_0%,rgb(43,43,46)_9%,rgb(168,168,181)_20%,rgb(73,73,77)_40%,rgb(43,43,46)_62.1622%,rgb(43,43,46)_100%)]">
+                    <a className="use-custom-cursor flex items-center flex-col overflow-hidden relative h-[320px] md:h-[400px] lg:h-[563px] justify-center
+                    w-full lg:w-full p-px rounded-[24px] bg-[linear-gradient(214deg,rgb(43,43,46)_0%,rgb(43,43,46)_9%,rgb(168,168,181)_20%,rgb(73,73,77)_40%,rgb(43,43,46)_62.1622%,rgb(43,43,46)_100%)]">
 
                         <div className="flex flex-col flex-1 gap-[10px] items-center justify-center relative p-0 w-full overflow-hidden rounded-[23px] bg-[linear-gradient(163deg,rgb(0,0,0)_82%,rgb(0,0,0)_100%)]">
                             {/* image div */}
