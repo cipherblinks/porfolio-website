@@ -43,7 +43,7 @@ function Hero() {
                         </h1>
                     </div>
 
-                    <div className="absolute h-[16px] w-[16px] md:h-[32px] md:w-[32px] top-0 right-[-14px] md:right-[-15px] md:top-[50px]">
+                    <div className="absolute h-[16px] w-[16px] md:h-[32px] md:w-[32px] top-0 right-[88px] md:right-[-15px] md:top-[50px]">
                         <div className="absolute inset-0">
                             <img src={logoIcon} alt="" className="w-full h-full object-center object-cover" />
                         </div>
@@ -62,7 +62,7 @@ function Hero() {
                         <Button icon={true} name="Book a call now" />
 
                         <button
-                            className="px-6 py-2 text-base bg-black font-medium rounded-full border border-custom cursor-pointer transition delay-200 duration-500 ease-in-out hover:-translate-y-0.5 hover:bg-button-dark">
+                            className="px-6 py-2 text-sm md:text-base bg-black font-medium rounded-full border border-custom cursor-pointer transition delay-200 duration-500 ease-in-out hover:-translate-y-0.5 hover:bg-button-dark">
                             Explore services
                         </button>
                     </div>

@@ -5,9 +5,10 @@
 @theme {
   --color-button-dark: #232325;
   --font-script: "Great Vibes", cursive;
-  --breakpoint-sm: 30rem;
-  --breakpoint-md: 51rem;
-  --breakpoint-lg: 75rem;
+  --breakpoint-sm: 30rem; /* 30rem × 16px = 480px */
+  --breakpoint-smx: 30rem; /* 30rem × 16px = 480px */
+  --breakpoint-md: 51rem; /* 51rem × 16px = 816px */
+  --breakpoint-lg: 75rem; /* 75rem × 16px = 1200px */  
   --border-color: var(--token-881bd875-3cac-4aee-90a6-77f2f1c7d3a3, rgba(255, 255, 255, 0.1));
   --tracking-2: 0.02em;
   --primary-text: white;
@@ -70,7 +71,7 @@
   @apply absolute left-0 h-[126px] w-[40px] 
          bg-[linear-gradient(270deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.2)_46.8416%,rgba(255,255,255,0)_100%)]
          origin-center opacity-0 
-         rotate-[15deg];
+         rotate-15;
 }
 }
 

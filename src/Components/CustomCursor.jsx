@@ -90,7 +90,7 @@ export default function CustomCursor({ selector = ".use-custom-cursor" }) {
     return (
         <div
             ref={cursorRef}
-            className="fixed top-0 left-0 z-9999 pointer-events-none"
+            className="fixed top-0 left-0 z-9999 pointer-events-none hidden md:block"
             style={{
                 width: "40px",
                 height: "40px",

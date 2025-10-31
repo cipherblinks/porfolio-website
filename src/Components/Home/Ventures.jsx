@@ -18,7 +18,8 @@ function Ventures() {
     return (
         <>
             <CustomCursor selector=".use-custom-cursor" />
-            <section className="flex items-start justify-start overflow-visible gap-[10px] text-white w-full md:max-w-[1500px] px-[16px] md:px-[42px] lg:px-[64px] py-[40px] md:py-[120px] relative mt-2 lg:mt-32">
+            <section className="flex items-start justify-start overflow-visible gap-[10px] text-white w-full md:max-w-[1500px] px-[16px] md:px-[32px] 
+            lg:px-[64px] py-[64px] md:py-[80px] relative md:mt-15 lg:mt-22">
                 <div className="flex flex-col gap-10 lg:gap-25">
                     <div className="flex flex-col items-start">
                         <div className="flex gap-3 items-center relative">

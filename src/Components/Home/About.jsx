@@ -22,7 +22,7 @@ function About() {
     return (
         <>
             <section className="flex items-start justify-center overflow-visible gap-[10px] text-white w-full md:max-w-[1500px] px-[16px] md:px-[32px] 
-            lg:px-[64px] pb-[64px] md:py-[80px] relative md:mt-15 lg:mt-22">
+            lg:px-[64px] py-[64px] md:py-[80px] relative md:mt-15 lg:mt-22">
                 {/* background animation */}
                 <div className="top-0 bottom-0 left-0 max-w-[1216px] absolute w-full">
                     <div className="flex items-center justify-between flex-nowrap overflow-hidden relative h-full w-full opacity-[1] p-0 max-w-full">

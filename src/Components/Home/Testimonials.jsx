@@ -18,23 +18,23 @@ function Testimonials() {
 
     return (
         <>
-            <section className="flex items-start justify-start overflow-visible gap-[10px] text-white w-full md:max-w-[1500px]
-                                px-[16px] md:px-[32px] lg:px-[64px] pb-[64px] md:py-[10px] relative">
-                <div className="flex flex-col gap-40 w-full">
+            <section className="flex items-start justify-start overflow-visible gap-[10px] text-white w-full md:max-w-[1500px] 
+            px-[16px] md:px-[32px]  lg:px-[64px] py-[64px] md:py-[80px] md:mt-15 lg:mt-22 relative">
+                <div className="flex flex-col gap-25 md:gap-40 w-full">
                     <div className="flex flex-col items-center justify-center w-full h-full">
                         <div className="flex gap-3 items-center relative">
                             <p className="text-xs lg:text-sm text-[rgba(255,255,255,0.6)] font-bold uppercase leading-[1.3em] tracking-widest testimonials-subHeading">Testimonials</p>
                         </div>
                         <div className="flex gap-3 items-center relative" data-speed="1">
                             <h5 className="text-3xl md:text-7xl lg:text-8xl font-bold leading-8 md:leading-[106px] testimonials-heading" >Trusted by partners</h5>
-                            <img src={logoIcon} alt="" className="size-8 mb-4 absolute bottom-12 -right-5" />
+                            <img src={logoIcon} alt="" className="size-4 md:size-8 mb-4 absolute bottom-11 -right-20 md:bottom-12 md:-right-5" />
                         </div>
                     </div>
 
                     <div className="flex items-center justify-center overflow-visible w-full gap-[32px] relative flex-nowrap">
                         <div className="overflow-visible w-full gap-[32px] relative transform perspective-distant
                         grid grid-cols-[repeat(1,minmax(50px,1fr))] md:grid-cols-[repeat(2,minmax(50px,1fr))] lg:grid-cols-[repeat(3,minmax(50px,1fr))]">
-                            {/* translate-y-[-82.8866px] */}
+
                             <div className="flex flex-col gap-6 w-full relative overflow-hidden transform perspective-distant" data-speed="0.5">
                                 <TestimonialsCard image={testimonialsImage1}
                                     comment='"Working with Cipher blinks was seamless. He built our internal dashboard using React and Node.js, and it performs flawlessly. 
@@ -59,7 +59,6 @@ function Testimonials() {
 
                             </div>
 
-                            {/* translate-y-[-67.7291px] */}
                             <div className="flex flex-col gap-6 w-full relative overflow-hidden transform perspective-distant md:hidden lg:flex" data-speed="0.5">
                                 <TestimonialsCard image={testimonialsImage5}
                                     comment='"We hired him to rebuild our outdated company site, and the new version is stunning. It’s fast, secure, 
