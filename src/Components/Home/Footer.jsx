@@ -136,11 +136,11 @@ function Footer() {
                 </div>
                 <div className="flex flex-col md:flex-row items-start justify-center relative w-full gap-[24px] overflow-visible pt-10">
                     <div className="flex items-start flex-nowrap justify-start overflow-visible relative">
-                        <p>Buy my templates now</p>
+                        <p className="text-xs md:text-sm font-mono">Buy my templates now</p>
                     </div>
                     <div className="flex items-center md:flex-1 flex-nowrap overflow-visible relative justify-start w-full md:justify-end gap-3">
                         <div>
-                            <p className="text-sm">
+                            <p className="text-xs md:text-sm font-mono text-[rgba(255,255,255,.7)]">
                                 Created by
                             </p>
                         </div>
@@ -148,7 +148,7 @@ function Footer() {
                             <img src={footerImage} alt="" className="w-full h-full object-center object-cover shrink-0" />
                         </div>
                         <div>
-                            <p className="text-sm">Blinks</p>
+                            <p className="text-xs md:text-sm font-mono">Blinks</p>
                         </div>
                     </div>
                 </div>
