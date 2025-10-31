@@ -14,14 +14,14 @@ function ProjectList() {
                 <div className="flex-none h-[40px] w-full relative">
                     <a href="" className="h-full w-full overflow-hidden relative">
                         <section className="flex size-full max-h-full max-w-full m-0 p-0 mask-fade-x overflow-hidden place-items-center">
-                            <div className="animate-scroll border border-white">
+                            <div className="animate-scroll">
 
                                 <div className="flex items-center flex-nowrap gap-5">
-                                    <div className="h-[60px] w-[205px] flex items-center text-lg font-semibold border border-white">
+                                    <div className="h-[60px] w-[205px] flex items-center text-lg font-semibold border">
                                         <img src={cssLogoImage} alt="CSS logo" className="h-[60px] w-[60px]" />
                                         <h1 className="text-white">CSS</h1>
                                     </div>
-                                    <div className="h-[60px] w-[205px] flex items-center text-lg font-semibold border border-white">
+                                    <div className="h-[60px] w-[205px] flex items-center text-lg font-semibold">
                                         <img src={htmlLogoImage} alt="HTML logo" className="h-[60px] w-[60px]" />
                                         <h1 className="text-white">HTML</h1>
                                     </div>
