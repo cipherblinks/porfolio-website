@@ -134,7 +134,7 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col md:flex-row items-start justify-center relative w-full gap-[24px] overflow-visible pt-10">
+                {/* <div className="flex flex-col md:flex-row items-start justify-center relative w-full gap-[24px] overflow-visible pt-10">
                     <div className="flex items-start flex-nowrap justify-start overflow-visible relative">
                         <p className="text-xs md:text-sm font-mono">Buy my templates now</p>
                     </div>
@@ -151,7 +151,7 @@ function Footer() {
                             <p className="text-xs md:text-sm font-mono">Blinks</p>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </section>
         </>
     )

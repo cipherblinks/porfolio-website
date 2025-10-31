@@ -43,7 +43,6 @@ export default function CustomCursor({ selector = ".use-custom-cursor" }) {
         const hideCursor = () => {
             insideRef.current = false;
 
-            // Delay a little in case we move immediately into another target
             setTimeout(() => {
                 if (!insideRef.current) {
                     gsap.to(cursor, {
@@ -90,7 +89,7 @@ export default function CustomCursor({ selector = ".use-custom-cursor" }) {
     return (
         <div
             ref={cursorRef}
-            className="fixed top-0 left-0 z-9999 pointer-events-none hidden md:block"
+            className="fixed top-0 left-0 z-9999 pointer-events-none"
             style={{
                 width: "40px",
                 height: "40px",
