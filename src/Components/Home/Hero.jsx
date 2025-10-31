@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { animateText } from "../.."
 import Button from "./Button"
+import logo from "/src/assets/images/logo.svg";
 
 function Hero() {
     useEffect(() => {
@@ -43,7 +44,7 @@ function Hero() {
 
                     <div className="absolute h-[16px] w-[16px] md:h-[32px] md:w-[32px] top-0 right-[-14px] md:right-[-15px] md:top-[50px]">
                         <div className="absolute inset-0">
-                            <img src="/src/assets/images/logo.svg" alt="" className="w-full h-full object-center object-cover" />
+                            <img src={logo} alt="" className="w-full h-full object-center object-cover" />
                         </div>
                     </div>
                     <div className="flex flex-col justify-start shrink-0 self-stretch relative h-auto w-full md:w-auto whitespace-pre-wrap wrap-break-word max-w-[520px] lg:max-w-lg">
