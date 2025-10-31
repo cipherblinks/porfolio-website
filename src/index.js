@@ -12,25 +12,23 @@ export const animateText = (target, options = {}) => {
     const chars = split.chars;
   
     gsap.fromTo(
-      chars,
-      {
-        opacity: 0,
-        x: -30,
-        filter: "blur(6px)", 
-      },
-      {
-        duration: 0.4,
-        opacity: 1,
-        x: 0,
-        filter: "blur(0px)",
-        ease: "power3.out",
-        stagger: 0.04,
-
-        rotationX: 550,
-        transformOrigin: "0% 50% -50",
-        ...options,
-      }
-    );
+        chars,
+        {
+          opacity: 0,
+          rotationX: -90,
+          filter: "blur(6px)",
+          transformOrigin: "50% 50% -20px",
+        },
+        {
+          duration: 0.8,
+          opacity: 1,
+          rotationX: 0,
+          filter: "blur(0px)",
+          ease: "power3.out",
+          stagger: 0.04,
+          ...options,
+        }
+      );      
   
     return split;
   };
