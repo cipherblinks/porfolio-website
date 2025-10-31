@@ -16,8 +16,8 @@ function ProjectList() {
                         <section className="flex size-full max-h-full max-w-full m-0 p-0 mask-fade-x overflow-hidden place-items-center">
                             <div className="animate-scroll">
 
-                                <div className="flex items-center">
-                                    <div className="h-[22px] w-[205px] flex items-center text-lg font-semibold">
+                                <div className="flex items-center gap-5">
+                                    <div className="h-[22px] w-[205px] flex items-center text-lg font-semibold border border-white">
                                         <img src={cssLogoImage} alt="" className="h-[40px] w-[205]" />
                                         <h1 className="text-white">CSS</h1>
                                     </div>
