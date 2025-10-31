@@ -27,7 +27,7 @@ function Testimonials() {
                         </div>
                         <div className="flex gap-3 items-center relative" data-speed="1">
                             <h5 className="text-3xl md:text-7xl lg:text-8xl font-bold leading-8 md:leading-[106px] testimonials-heading" >Trusted by partners</h5>
-                            <img src={logoIcon} alt="" className="size-4 md:size-8 mb-4 absolute bottom-11 -right-20 md:bottom-12 md:-right-5" />
+                            <img src={logoIcon} alt="" className="size-4 md:size-8 mb-4 absolute bottom-11 -right-16 md:bottom-12 md:-right-5" />
                         </div>
                     </div>
 
