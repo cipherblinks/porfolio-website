@@ -5,8 +5,8 @@ import footerImage from '/src/assets/images/hero-image.png'
 function Footer() {
     return (
         <>
-            <section className="flex items-start flex-col justify-start overflow-visible gap-[10px] text-white w-full md:max-w-[1500px] 
-            px-[16px] md:px-[32px] lg:px-[64px] md:py-[80px] mt-15 md:mt-15 lg:mt-22 relative">
+            <section className="flex items-center flex-col justify-start overflow-visible text-white w-full md:max-w-[1500px] 
+            px-[16px] pb-[80px] pt-[40px] md:px-[32px] lg:px-[64px] md:py-[80px] mt-15 md:mt-15 lg:mt-22 relative">
                 <div className="bg-[rgb(255,70,37)] blur-[100px] rounded-[999px] w-[500px] h-[86px] absolute bottom-[-25px] opacity-[1] overflow-hidden left-[calc(26.04166666666669%-500px/2)]"></div>
                 <div className="bg-[rgb(37,88,255)] blur-[100px] rounded-[999px] w-[653px] h-[61px] absolute bottom-[-26px] opacity-[1] overflow-hidden left-[calc(37.361111111111136%-653px/2)]"></div>
                 <div className="flex items-start flex-col md:flex-row gap-[34px] md:gap-[24px] pt-[50px] pb-[40px] md:pt-[120px] md:pb-[80px] overflow-visible justify-center flex-nowrap 
@@ -134,7 +134,8 @@ function Footer() {
                         </div>
                     </div>
                 </div>
-                {/* <div className="flex flex-col md:flex-row items-start justify-center relative w-full gap-[24px] overflow-visible pt-10">
+
+                <div className="flex flex-col md:flex-row items-start justify-center relative w-full h-min max-w-[1500px] gap-[24px] overflow-visible pt-10">
                     <div className="flex items-start flex-nowrap justify-start overflow-visible relative">
                         <p className="text-xs md:text-sm font-mono">Buy my templates now</p>
                     </div>
@@ -151,7 +152,7 @@ function Footer() {
                             <p className="text-xs md:text-sm font-mono">Blinks</p>
                         </div>
                     </div>
-                </div> */}
+                </div>
             </section>
         </>
     )
