@@ -44,7 +44,7 @@ function Header() {
 
 
                     {/* MENU DROP DOWN */}
-                    <div className="subMenu flex items-center w-full lg:hidden" id="subMenu">
+                    <div className="subMenu items-center w-full hidden" id="subMenu">
                         <nav className="flex items-center justify-center size-full gap-[10px] relative">
                             <div className="w-full flex items-center absolute top-1">
                                 <div className="flex flex-col gap-5 items-center justify-center border border-[rgba(255,255,255,.2)] rounded-[24px] bg-[#000000] py-[24px] px-[16px] w-full">
