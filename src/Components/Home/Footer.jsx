@@ -7,8 +7,8 @@ function Footer() {
         <>
             <section className="flex items-center flex-col justify-start overflow-visible text-white w-full md:max-w-[1500px] 
             px-[16px] pb-[80px] pt-[40px] md:px-[32px] lg:px-[64px] md:py-[80px] mt-15 md:mt-15 lg:mt-22 relative">
-                <div className="bg-[rgb(255,70,37)] blur-[100px] rounded-[999px] w-[500px] h-[86px] absolute bottom-[-25px] opacity-[1] overflow-hidden left-[calc(26.04166666666669%-500px/2)]"></div>
-                <div className="bg-[rgb(37,88,255)] blur-[100px] rounded-[999px] w-[653px] h-[61px] absolute bottom-[-26px] opacity-[1] overflow-hidden left-[calc(37.361111111111136%-653px/2)]"></div>
+                <div className="hidden lg:block bg-[rgb(255,70,37)] blur-[100px] rounded-[999px] w-[500px] h-[86px] absolute bottom-[-25px] opacity-[1] overflow-hidden left-[calc(26.04166666666669%-500px/2)]"></div>
+                <div className="hidden lg:block bg-[rgb(37,88,255)] blur-[100px] rounded-[999px] w-[653px] h-[61px] absolute bottom-[-26px] opacity-[1] overflow-hidden left-[calc(37.361111111111136%-653px/2)]"></div>
                 <div className="flex items-start flex-col md:flex-row gap-[34px] md:gap-[24px] pt-[50px] pb-[40px] md:pt-[120px] md:pb-[80px] overflow-visible justify-center flex-nowrap 
                 relative w-full border-t border-b border-[rgba(255,255,255,.2)]">
                     <div className="flex flex-col items-start justify-center w-[400px] h-full gap-[24px]">
@@ -27,7 +27,9 @@ function Footer() {
                             </div>
                         </div>
                         <div className="flex items-center justify-center">
-                            <Button icon={false} name=' Contact now' />
+                            <Button icon={false} name=' Contact now' onClick={() => {
+                                window.open("https://wa.me/2348154393597", "_blank");
+                            }} />
                         </div>
 
                     </div>
@@ -97,14 +99,14 @@ function Footer() {
                                 </div>
                                 <div className="flex shrink-0 items-start">
                                     <p className="text-sm md:text-base font-normal leading-[1.4em] text-[rgba(255,255,255,.7)]">
-                                        <a href="" className="footer-fancy-link-nav">
-                                            Instagram
+                                        <a href="https://github.com/cipherblinks" className="footer-fancy-link-nav">
+                                            Github
                                         </a>
                                     </p>
                                 </div>
                                 <div className="flex shrink-0 items-start">
                                     <p className="text-sm md:text-base font-normal leading-[1.4em] text-[rgba(255,255,255,.7)]">
-                                        <a href="" className="footer-fancy-link-nav">
+                                        <a href="https://x.com/cipherblinks" className="footer-fancy-link-nav">
                                             X(Twitter)
                                         </a>
                                     </p>
@@ -118,14 +120,14 @@ function Footer() {
                                 </div>
                                 <div className="flex shrink-0 items-start">
                                     <p className="text-sm md:text-base font-normal leading-[1.4em] text-[rgba(255,255,255,.7)]">
-                                        <a href="" className="footer-fancy-link-nav">
+                                        <a href="https://tiktok.com/cipherblinks" className="footer-fancy-link-nav">
                                             TikTok
                                         </a>
                                     </p>
                                 </div>
                                 <div className="flex shrink-0 items-start">
                                     <p className="text-sm md:text-base font-normal leading-[1.4em] text-[rgba(255,255,255,.7)]">
-                                        <a href="" className="footer-fancy-link-nav">
+                                        <a href="https://www.upwork.com/freelancers/~011b0e5d2eae0bedcc?mp_source=share" className="footer-fancy-link-nav">
                                             Upwork
                                         </a>
                                     </p>

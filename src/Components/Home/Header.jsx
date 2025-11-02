@@ -34,7 +34,9 @@ function Header() {
                                 <li className="fancy-link-nav">Contact</li>
                             </ul>
                             <div className='hidden lg:block'>
-                                <Button name={`Whatsapp Me`} icon={true} />
+                                <Button name={`Whatsapp Me`} icon={true} onClick={() => {
+                                    window.open("https://wa.me/2348154393597", "_blank");
+                                }} />
                             </div>
                             <div className="lg:hidden" id="subMenuView">
                                 <Button name="Menu" />
@@ -56,7 +58,9 @@ function Header() {
                                         <li >Contact</li>
                                     </ul>
 
-                                    <Button name='WhatsApp Me' icon={true} />
+                                    <Button name='WhatsApp Me' icon={true} onClick={() => {
+                                        window.open("https://wa.me/2348154393597", "_blank");
+                                    }} />
                                 </div>
                             </div>
                         </nav>

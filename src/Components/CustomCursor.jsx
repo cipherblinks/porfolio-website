@@ -100,9 +100,9 @@ export default function CustomCursor({ selector = ".use-custom-cursor" }) {
             <div className="h-full w-full flex cursor-pointer gap-[10px] justify-center items-center overflow-visible relative">
                 <div className="flex items-center flex-1 h-full relative p-px overflow-hidden justify-center flex-nowrap rounded-full shadow-[0_0.48175px_0.86715px_-0.0833333px_rgba(0,0,0,0.05),0_1.83083px_3.29549px_-0.166667px_rgba(0,0,0,0.13),0_8px_14.4px_-0.25px_rgba(0,0,0,0.475)] 
                                             bg-[linear-gradient(215deg,rgba(43,43,46,1)_0%,rgba(43,43,46,1)_13%,rgba(168,168,181,1)_20%,rgba(73,73,77,1)_40%,rgba(43,43,46,1)_62.1622%,rgba(43,43,46,1)_100%)]">
-                    <div className="bg-[linear-gradient(38deg,rgb(11,11,13)48%,rgb(33,33,36)100%)] rounded-full flex flex-1 items-center justify-center  *:overflow-visible h-full">
+                    <div className="bg-[linear-gradient(38deg,rgb(11,11,13)48%,rgb(33,33,36)100%)] rounded-full flex flex-1 items-center justify-center overflow-visible h-full">
                         <div className="rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-45">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" className="size-4">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                             </svg>
                         </div>

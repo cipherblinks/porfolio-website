@@ -1,8 +1,33 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { scrollAnimateText } from "../.."
 import logoIcon from "/src/assets/images/logo.svg";
+import emailjs from "emailjs-com";
 
 function Contact() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_0f1i7bb",
+                "template_qriu2ji",
+                form.current,
+                "KIS3qEInnY1eRgZSu"
+            )
+            .then(
+                () => {
+                    alert("Message sent successfully!");
+                    form.current.reset();
+                },
+                (error) => {
+                    console.log("FAILED...", error);
+                    alert(`${error} Something went wrong, please try again.`);
+                }
+            );
+    };
+
     useEffect(() => {
         scrollAnimateText(".contact-subHeading");
         scrollAnimateText(".contact-heading");
@@ -32,13 +57,13 @@ function Contact() {
                         </div>
 
                         {/* form */}
-                        <form action="" className="flex items-start flex-col flex-nowrap overflow-hidden w-full md:w-[60%] relative justify-start gap-[16px]">
+                        <form ref={form} onSubmit={sendEmail} className="flex items-start flex-col flex-nowrap overflow-hidden w-full md:w-[60%] relative justify-start gap-[16px]">
                             <label className="flex flex-col items-start gap-[4px] justify-start relative w-full">
                                 <div>
                                     <p className="text-xs font-medium md:font-semibold text-[rgba(255,255,255,.7)] leading-[1.6em]">Name</p>
                                 </div>
                                 <div className="flex items-center bg-[rgba(187,187,187,0.15)] border border-[#bbbbbb26] rounded-[10px] h-[44px] relative w-full">
-                                    <input type="text" required placeholder="Cipher Blinks" className="bg-transparent text-sm font-medium text-[rgb(153,153,153)]
+                                    <input type="text" required name="name" placeholder="Cipher Blinks" className="bg-transparent text-sm font-medium text-[rgb(153,153,153)]
                                      border-none p-[8px] h-[44px] relative w-full text-ellipsis size-full focus:outline-0 focus:outline-[rgb(144,144,144)] placeholder:font-normal md:placeholder:font-medium" />
                                 </div>
                             </label>
@@ -48,7 +73,7 @@ function Contact() {
                                     <p className="text-xs font-medium md:font-semibold text-[rgba(255,255,255,.7)] leading-[1.6em]">Email</p>
                                 </div>
                                 <div className="flex items-center bg-[rgba(187,187,187,0.15)] border border-[#bbbbbb26] rounded-[10px] h-[44px] relative w-full">
-                                    <input type="email" required placeholder="contact@cipherblinks.dev" className="bg-transparent text-sm font-medium text-[rgb(153,153,153)] 
+                                    <input type="email" required name="email" placeholder="contact@cipherblinks.dev" className="bg-transparent text-sm font-medium text-[rgb(153,153,153)] 
                                      border-none p-[8px] h-[44px] relative w-full text-ellipsis size-full focus:outline-0 focus:outline-[rgb(144,144,144)] placeholder:font-normal md:placeholder:font-medium" />
                                 </div>
                             </label>
@@ -58,13 +83,13 @@ function Contact() {
                                     <p className="text-xs font-medium md:font-semibold text-[rgba(255,255,255,.7)] leading-[1.6em]">Message</p>
                                 </div>
                                 <div className="flex items-center bg-[rgba(187,187,187,0.15)] border border-[#bbbbbb26] rounded-[10px] relative w-full p-[12px] min-h-[120px]">
-                                    <textarea name="" required id="" placeholder="Your message" className="flex w-full focus:outline-0 focus:outline-[rgb(144,144,144)] resize-y overflow-y-auto
+                                    <textarea name="message" required placeholder="Your message" className="flex w-full focus:outline-0 focus:outline-[rgb(144,144,144)] resize-y overflow-y-auto
                                     placeholder:font-normal md:placeholder:font-medium bg-transparent text-sm font-medium text-[rgb(153,153,153)] border-none p-[8px] min-h-[120px] h-full"></textarea>
                                 </div>
                             </label>
                             <div className="flex items-center justify-center w-full">
                                 <button
-                                    className="px-6 py-2 text-sm md:text-base w-full bg-black font-medium rounded-full border border-custom cursor-pointer transition delay-200 duration-500 ease-in-out hover:bg-button-dark">
+                                    type="submit" className="px-6 py-2 text-sm md:text-base w-full bg-black font-medium rounded-full border border-custom cursor-pointer transition delay-200 duration-500 ease-in-out hover:bg-button-dark">
                                     Submit
                                 </button>
                             </div>

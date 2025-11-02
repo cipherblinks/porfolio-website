@@ -1,8 +1,18 @@
+import { useEffect, useState } from "react";
 import CustomCursor from "../CustomCursor";
+
 function WorkFeatures(props) {
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
+    useEffect(() => {
+        const handleResize = () => setIsDesktop(window.innerWidth >= 768);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+
     return (
         <>
-            <CustomCursor selector=".use-custom-cursor" />
+            {isDesktop && <CustomCursor selector=".use-custom-cursor" />}
             <div className="flex items-center flex-col gap-[32px] w-full justify-start flex-nowrap self-center justify-self-start relative group ">
                 <div className="relative w-full h-auto">
                     <a className="use-custom-cursor flex items-center flex-col overflow-hidden relative h-[320px] md:h-[400px] lg:h-[563px] justify-center
