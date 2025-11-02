@@ -5,8 +5,6 @@ import SplitText from "gsap/SplitText";
 
 gsap.registerPlugin(useGSAP, SplitText, ScrollTrigger);
 
-
-
 export const animateText = (target, options = {}) => {
     const split = new SplitText(target, { type: "words,chars" });
     const chars = split.chars;
@@ -32,7 +30,6 @@ export const animateText = (target, options = {}) => {
   
     return split;
   };
-
 
 export const scrollAnimateText = (target, options = {}) => {
     const el = document.querySelector(target);
