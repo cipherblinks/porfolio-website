@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { slideUpOnScroll } from "../..";
 import Button from "./Button"
 import aboutImage from "/src/assets/images/my.jpg"
+import logoIcon from "/src/assets/images/logo.svg";
 
 function About() {
     useEffect(() => {
@@ -71,7 +72,7 @@ function About() {
                     <div className="flex flex-col items-start flex-1 gap-10 flex-nowrap overflow-visible justify-start relative">
                         <div className="flex flex-col gap-4">
                             <div className="flex gap-3 items-center relative">
-                                <img src="/src/assets/images/logo.svg" alt="" className="size-8 mb-4 absolute bottom-2 -left-6 md:left-0 hidden md:block" />
+                                <img src={logoIcon} alt="" className="size-8 mb-4 absolute bottom-2 -left-6 md:left-0 hidden md:block" />
                                 <p className="text-xs lg:text-sm text-[rgba(255,255,255,0.6)] font-bold uppercase leading-[1.3em] tracking-widest">CIPHER BLINKS</p>
                             </div>
                             <h5 className="text-3xl md:text-7xl lg:text-8xl font-bold leading-8 md:leading-[106px]">About</h5>

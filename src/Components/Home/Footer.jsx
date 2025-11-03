@@ -27,7 +27,7 @@ function Footer() {
                             </div>
                         </div>
                         <div className="flex items-center justify-center">
-                            <Button icon={false} name=' Contact now' onClick={() => {
+                            <Button icon={false} name='Contact now' onClick={() => {
                                 window.open("https://wa.me/2348154393597", "_blank");
                             }} />
                         </div>

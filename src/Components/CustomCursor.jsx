@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 
 export default function CustomCursor({ selector = ".use-custom-cursor" }) {
     const cursorRef = useRef(null);
-    const insideRef = useRef(false); // track if cursor is inside any target
+    const insideRef = useRef(false);
 
     useEffect(() => {
         const cursor = cursorRef.current;
@@ -11,8 +11,8 @@ export default function CustomCursor({ selector = ".use-custom-cursor" }) {
 
         const move = (e) => {
             gsap.to(cursor, {
-                x: e.clientX - 20,
-                y: e.clientY - 20,
+                x: e.clientX,
+                y: e.clientY,
                 duration: 0.8,
                 ease: "power3.out",
             });
@@ -89,8 +89,9 @@ export default function CustomCursor({ selector = ".use-custom-cursor" }) {
     return (
         <div
             ref={cursorRef}
-            className="fixed top-0 left-0 z-9999 pointer-events-none"
+            className="fixed top-0 left-0 pointer-events-none"
             style={{
+                zIndex: 9999,
                 width: "40px",
                 height: "40px",
                 transform: "translate(-50%, -50%)",
@@ -102,8 +103,19 @@ export default function CustomCursor({ selector = ".use-custom-cursor" }) {
                                             bg-[linear-gradient(215deg,rgba(43,43,46,1)_0%,rgba(43,43,46,1)_13%,rgba(168,168,181,1)_20%,rgba(73,73,77,1)_40%,rgba(43,43,46,1)_62.1622%,rgba(43,43,46,1)_100%)]">
                     <div className="bg-[linear-gradient(38deg,rgb(11,11,13)48%,rgb(33,33,36)100%)] rounded-full flex flex-1 items-center justify-center overflow-visible h-full">
                         <div className="rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-45">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" className="size-4">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth={1.5}
+                                stroke="white"
+                                className="size-4"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                                />
                             </svg>
                         </div>
                     </div>
