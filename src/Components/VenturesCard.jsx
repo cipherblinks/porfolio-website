@@ -19,8 +19,8 @@ function VenturesCard(props) {
                                             bg-[linear-gradient(215deg,rgba(43,43,46,1)_0%,rgba(43,43,46,1)_13%,rgba(168,168,181,1)_20%,rgba(73,73,77,1)_40%,rgba(43,43,46,1)_62.1622%,rgba(43,43,46,1)_100%)]">
                                     <div className="bg-[linear-gradient(38deg,rgb(11,11,13)48%,rgb(33,33,36)100%)] rounded-full flex flex-1 items-center justify-center  *:overflow-visible h-full">
                                         <div className="rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-45">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-4">
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
                                             </svg>
                                         </div>
                                     </div>

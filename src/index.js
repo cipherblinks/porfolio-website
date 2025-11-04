@@ -7,73 +7,91 @@ gsap.registerPlugin(useGSAP, SplitText, ScrollTrigger);
 
 
 export const animateText = (target, options = {}) => {
+  // Wait for fonts to be loaded before splitting text
+  const startAnimation = () => {
     const split = new SplitText(target, { type: "words,chars" });
     const chars = split.chars;
-  
+
     gsap.fromTo(
-        chars,
-        {
-          opacity: 0,
-          rotationX: -90,
-          filter: "blur(6px)",
-          transformOrigin: "50% 50% -20px",
-        },
-        {
-          duration: 0.8,
-          opacity: 1,
-          rotationX: 0,
-          filter: "blur(0px)",
-          ease: "power3.out",
-          stagger: 0.04,
-          ...options,
-        }
-      );      
-  
+      chars,
+      {
+        opacity: 0,
+        rotationX: -90,
+        filter: "blur(6px)",
+        transformOrigin: "50% 50% -20px",
+      },
+      {
+        duration: 0.8,
+        opacity: 1,
+        rotationX: 0,
+        filter: "blur(0px)",
+        ease: "power3.out",
+        stagger: 0.04,
+        ...options,
+      }
+    );
+
     return split;
   };
 
+  // Use font readiness to avoid "SplitText called before fonts loaded"
+  if (document.fonts) {
+    document.fonts.ready.then(startAnimation);
+  } else {
+    window.addEventListener("load", startAnimation);
+  }
+};
+
 export const scrollAnimateText = (target, options = {}) => {
-    const el = document.querySelector(target);
-    if (!el) return; // prevent errors if element doesn't exist
-  
-    const showText = () => {
-      const split = new SplitText(el, { type: "words,chars" });
-      const chars = split.chars;
-  
-      gsap.fromTo(
-        chars,
-        {
-          autoAlpha: 0,
-          x: -40,
-          filter: "blur(6px)",
-        },
-        {
-          autoAlpha: 1,
-          x: 0,
-          filter: "blur(0px)",
-          duration: 1.2,
-          ease: "power3.out",
-          stagger: 0.04,
-          ...options,
-        }
-      );
-    };
-  
-    // Create scroll trigger
+  const el = document.querySelector(target);
+  if (!el) return;
+
+  const showText = () => {
+    const split = new SplitText(el, { type: "words,chars" });
+    const chars = split.chars;
+
+    gsap.fromTo(
+      chars,
+      {
+        autoAlpha: 0,
+        x: -40,
+        filter: "blur(6px)",
+      },
+      {
+        autoAlpha: 1,
+        x: 0,
+        filter: "blur(0px)",
+        duration: 1.2,
+        ease: "power3.out",
+        stagger: 0.04,
+        ...options,
+      }
+    );
+  };
+
+  // ✅ Wait for fonts before creating SplitText
+  const init = () => {
     ScrollTrigger.create({
       trigger: el,
       start: "top 100%",
       toggleActions: "play none none reverse",
       onEnter: showText,
     });
-  
-    // 👇 Fix: if already visible (on refresh), show immediately
-    // requestAnimationFrame(() => {
-    //   if (ScrollTrigger.isInViewport(el)) {
-    //     showText();
-    //   }
-    // });
+
+    // If already visible (like on refresh), animate immediately
+    requestAnimationFrame(() => {
+      if (ScrollTrigger.isInViewport(el)) {
+        showText();
+      }
+    });
   };
+
+  if (document.fonts) {
+    document.fonts.ready.then(init);
+  } else {
+    window.addEventListener("load", init);
+  }
+};
 
   export const animateServiceList = (target) => {
     // make sure DOM is ready
