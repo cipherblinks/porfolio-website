@@ -64,7 +64,7 @@ function About() {
                     <div className="flex items-center flex-nowrap w-full lg:w-min h-min rounded-[24px] justify-center overflow-hidden p-px relative bg-[linear-gradient(214deg,rgb(43,43,46)_0%,rgb(43,43,46)_9%,rgb(168,168,181)_20%,rgb(73,73,77)_40%,rgb(43,43,46)_62.1622%,rgb(43,43,46)_100%)]">
                         <div className="flex-1 md:flex-none w-full h-[400px] md:h-[600px] lg:h-[700px] lg:w-[510px] relative rounded-[23px]">
                             <div className="absolute inset-0">
-                                <img src={aboutImage} alt="" className="w-full h-full object-center object-cover rounded-[23px]" />
+                                <img src={aboutImage} alt="about me image" className="w-full h-full object-center object-cover rounded-[23px]" />
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@ function About() {
                     <div className="flex flex-col items-start flex-1 gap-10 flex-nowrap overflow-visible justify-start relative">
                         <div className="flex flex-col gap-4">
                             <div className="flex gap-3 items-center relative">
-                                <img src={logoIcon} alt="" className="size-8 mb-4 absolute bottom-2 -left-6 md:left-0 hidden md:block" />
+                                <img src={logoIcon} alt="icon" className="size-8 mb-4 absolute bottom-2 -left-6 md:left-0 hidden md:block" />
                                 <p className="text-xs lg:text-sm text-[rgba(255,255,255,0.6)] font-bold uppercase leading-[1.3em] tracking-widest">CIPHER BLINKS</p>
                             </div>
                             <h5 className="text-3xl md:text-7xl lg:text-8xl font-bold leading-8 md:leading-[106px]">About</h5>

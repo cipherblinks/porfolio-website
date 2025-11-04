@@ -18,7 +18,7 @@ function Footer() {
                             </div>
                             <div className="flex gap-3 items-center relative">
                                 <h5 className="text-4xl md:text-5xl font-bold leading-[1.1em] tracking-[-0.01em]">Blinks</h5>
-                                <img src={logoIcon} alt="" className="size-4 absolute bottom-5 md:bottom-8 -right-4" />
+                                <img src={logoIcon} alt="icon" className="size-4 absolute bottom-5 md:bottom-8 -right-4" />
                             </div>
                             <div className="flex shrink-0 items-start w-full relative">
                                 <p className="font-medium text-sm md:text-base text-[rgba(255,255,255,.7)] leading-[1.4em]">
@@ -148,7 +148,7 @@ function Footer() {
                             </p>
                         </div>
                         <div className="h-[42px] relative w-[42px] rounded-[999px] overflow-hidden bg-black shrink-0">
-                            <img src={footerImage} alt="" className="w-full h-full object-center object-cover shrink-0" />
+                            <img src={footerImage} alt="Footer Profile Image" className="w-full h-full object-center object-cover shrink-0" />
                         </div>
                         <div>
                             <p className="text-xs md:text-sm font-mono">Blinks</p>

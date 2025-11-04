@@ -20,7 +20,7 @@ function Service() {
             <section className="flex flex-col gap-20 md:gap-25 text-white md:max-w-[1500px] mx-auto w-full px-[16px] md:px-[42px] lg:px-[64px] mt-20 lg:mt-32">
                 <div>
                     <div className="flex gap-3 items-center relative">
-                        <img src={logoIcon} alt="" className="size-8 mb-4 absolute bottom-2 -left-6 md:left-0 hidden md:block" />
+                        <img src={logoIcon} alt="icon" className="size-8 mb-4 absolute bottom-2 -left-6 md:left-0 hidden md:block" />
                         <p className="text-xs lg:text-sm text-[rgba(255,255,255,0.6)] font-bold uppercase leading-[1.3em] tracking-widest service-subHeading">Level Up Your BUSINESS</p>
                     </div>
                     <h5 className="text-3xl md:text-7xl lg:text-8xl font-bold leading-8 md:leading-[106px] service-heading">
@@ -28,17 +28,16 @@ function Service() {
                     </h5>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-20 md:gap-10 lg:gap-5 ">
+                <div className="flex flex-col lg:flex-row gap-20 md:gap-10 lg:gap-15">
                     <div className="flex flex-col gap-5">
                         <div>
-                            <img src={frontendLogo} alt="" className="h-16" />
+                            <img src={frontendLogo} alt="Frontend Icon" className="h-16" />
                         </div>
-                        <div className="flex flex-col gap-2">
+                        <div className="flex flex-col gap-2 w-full md:max-w-7xl">
                             <h5 className="font-bold text-2xl lg:text-[32px] leading-[1.4em] font-[Inter_Display]">Frontend Development</h5>
-                            <p className="text-sm font-semibold leading-[1.4em] tracking-0 text-[rgba(255,255,255,0.6)] whitespace-pre-wrap">
-                                Official Frontend web Expert creating custom web solutions that converts.
-                                Engage your clients with visually striking and functional experiences.
-                                Full assistance with site publication included.
+                            <p className="text-sm font-semibold leading-[1.4em] tracking-tight text-[rgba(255,255,255,0.6)] whitespace-pre-wrap line-clamp-4">
+                                Frontend Web Expert building custom, high-converting websites that blend beautiful design with powerful functionality.
+                                I create digital experiences that engage users and drive real results with full support from concept to live deployment.
                             </p>
                             <p className="text-[rgba(255,255,255,0.7)] md:text-base font-semibold leading-[1.4em] text-sm">From 200 USD</p>
                         </div>
@@ -48,13 +47,13 @@ function Service() {
                     </div>
                     <div className="flex flex-col gap-5">
                         <div>
-                            <img src={backendLogo} alt="" className="h-16" />
+                            <img src={backendLogo} alt="Backend Icon" className="h-16" />
                         </div>
-                        <div className="flex flex-col gap-2 ">
+                        <div className="flex flex-col gap-2 w-full md:max-w-7xl">
                             <h5 className="font-bold text-2xl lg:text-[32px] leading-[1.4em] font-[Inter_Display]">Backend Development</h5>
-                            <p className="text-sm font-semibold leading-[1.4em] text-[rgba(255,255,255,0.6)] line-clamp-4 whitespace-pre-wrap">
-                                A great design isn’t just about looks. It’s about clarity and ease of use. Let's design app or site that
-                                engage your users, and elevate your brand with thoughtful interactions and polished aesthetics.
+                            <p className="text-sm font-semibold leading-[1.4em] tracking-tight text-[rgba(255,255,255,0.6)] line-clamp-4 whitespace-pre-wrap">
+                                Backend Developer focused on building scalable, secure, and high-performance systems.
+                                I design efficient APIs, optimize databases, and ensure your application runs flawlessly from the inside out.
                             </p>
                             <p className="text-[rgba(255,255,255,0.7)] md:text-base font-semibold leading-[1.4em] text-sm">From 1,000 USD</p>
                         </div>
@@ -64,15 +63,16 @@ function Service() {
                     </div>
                     <div className="flex flex-col gap-5">
                         <div>
-                            <img src={aiLogo} alt="" className="h-16" />
+                            <img src={aiLogo} alt="SEO Performance Icon" className="h-16" />
                         </div>
-                        <div className="flex flex-col gap-2">
-                            <h5 className="font-bold text-2xl lg:text-[32px] leading-[1.4em] font-[Inter_Display]">UX Audit</h5>
-                            <p className="text-sm font-semibold leading-[1.4em] tracking-0 text-[rgba(255,255,255,0.6)] line-clamp-4 whitespace-pre-wrap">
-                                Struggling with website performance? A usability audit reveal pain points of your customers,
-                                and provides actionable insights to boost conversion. Excellent first step into growing your business.
+                        <div className="flex flex-col gap-2 w-full md:max-w-7xl">
+                            <h5 className="font-bold text-2xl lg:text-[32px] leading-[1.4em] font-[Inter_Display]">SEO Performance</h5>
+                            <p className="text-sm font-semibold leading-[1.4em] tracking-tight text-[rgba(255,255,255,0.6)] line-clamp-4 whitespace-pre-wrap">
+                                Boost visibility. Drive results.
+                                I optimize websites for search performance, ensuring fast load times, clean structure, and higher rankings across search engines
+                                helping your business get found by the right audience.
                             </p>
-                            <p className="text-[rgba(255,255,255,0.7)] md:text-base font-semibold leading-[1.4em] text-sm">From 900 USD</p>
+                            <p className="text-[rgba(255,255,255,0.7)] md:text-base font-semibold leading-[1.4em] text-sm">From 150 USD</p>
                         </div>
                         <div>
                             <Button name={`Book a call`} icon={true} />

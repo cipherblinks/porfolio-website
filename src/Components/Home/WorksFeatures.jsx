@@ -24,7 +24,7 @@ function WorkFeatures(props) {
                                 <div className="inset-0 absolute">
                                     <div className="absolute inset-0 rounded-[23px] overflow-hidden">
                                         <div className="rounded-[23px] md:transition-transform md:duration-500 md:ease-in-out md:group-hover:scale-105">
-                                            <img src={props.image} alt="" className="w-full h-full object-center object-cover" />
+                                            <img src={props.image} alt={props.alt} className="w-full h-full object-center object-cover" />
                                         </div>
                                     </div>
                                     {/* shadow div */}

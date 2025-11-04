@@ -8,7 +8,7 @@ function VenturesCard(props) {
                             gap-[10px] bg-[linear-gradient(163deg,rgb(0,0,0)_82%,rgb(41,41,43)_100%)]">
                     {/* image div */}
                     <div className="w-full md:w-[288px] lg:w-[400px] h-[200px] md:h-full relative overflow-hidden ">
-                        <img src={props.image} alt="" className="w-full h-full object-center object-cover" />
+                        <img src={props.image} alt={props.alt} className="w-full h-full object-center object-cover" />
                     </div>
 
                     <div className="flex items-start justify-center md:flex-1 flex-col gap-[8px] w-full h-full relative pt-[24px] pl-[24px] pr-[24px] 

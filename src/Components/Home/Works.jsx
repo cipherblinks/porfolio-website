@@ -30,10 +30,10 @@ function Works() {
                     </div>
 
                     <div className="flex items-center w-full flex-col flex-wrap gap-[16px] relative md:grid md:content-center lg:gap-8 md:auto-rows-fr md:grid-cols-[repeat(2,minmax(50px,1fr))]">
-                        <WorkFeatures image={work2} featured='FEATURED' heading='Real Estate Portfolio Website' paragraph='A sleek Estate portfolio website' />
-                        <WorkFeatures image={work3} heading='Sales Consulting Agency' paragraph='A sales consulting agencies website' />
-                        <WorkFeatures image={work1} heading='Modern eCommerce Template' paragraph='A sleek modern eCommerce' />
-                        <WorkFeatures image={work4} heading='Crypto SaaS Website' paragraph='A exchanges Crypto Platforms' />
+                        <WorkFeatures image={work2} featured='FEATURED' heading='Real Estate Portfolio Website' paragraph='A sleek Estate portfolio website' alt='Real Estate Portfolio Website' />
+                        <WorkFeatures image={work3} heading='Sales Consulting Agency' paragraph='A sales consulting agencies website' alt='Sales Consulting Agency' />
+                        <WorkFeatures image={work1} heading='Modern eCommerce Template' paragraph='A sleek modern eCommerce' alt='Modern eCommerce Template' />
+                        <WorkFeatures image={work4} heading='Crypto SaaS Website' paragraph='A exchanges Crypto Platforms' alt='Crypto SaaS Website' />
                     </div>
                 </div>
             </section>

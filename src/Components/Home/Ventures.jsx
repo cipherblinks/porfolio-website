@@ -27,7 +27,7 @@ function Ventures() {
                         </div>
                         <div className="flex gap-3 items-center relative">
                             <h5 className="text-3xl md:text-7xl lg:text-8xl font-bold leading-8 md:leading-[106px] ventures-heading">Ventures</h5>
-                            <img src={logoIcon} alt="" className="size-8 mb-4 absolute bottom-12 md:left-74 lg:left-98" />
+                            <img src={logoIcon} alt="icon" className="size-8 mb-4 absolute bottom-12 md:left-74 lg:left-98" />
                         </div>
                     </div>
 
@@ -36,19 +36,19 @@ function Ventures() {
                             image={veturesImage1}
                             heading='Backend Development Masterclass'
                             paragraph='Learn how to build robust, scalable backend systems using Node.js, Express, and databases like MongoDB or PostgreSQL. 
-                                       Understand APIs, authentication, and performance optimization from scratch. '
+                                       Understand APIs, authentication, and performance optimization from scratch.' alt='Backend Development Masterclass'
                         />
                         <VenturesCard
                             image={veturesImage2}
                             heading='Frontend Development Masterclass'
                             paragraph='Master the art of modern frontend development with React, Tailwind CSS, and Next.js. 
-                                       Learn how to create fast, responsive, and elegant web interfaces that stand out.'
+                                       Learn how to create fast, responsive, and elegant web interfaces that stand out.' alt='Frontend Development Masterclass'
                         />
                         <VenturesCard
                             image={veturesImage3}
                             heading='AI for Developers Masterclass'
                             paragraph='Learn how to integrate AI tools and APIs into your workflow. Build smart applications with OpenAI, LangChain, and TensorFlow 
-                                       to enhance productivity and innovation as a developer.'
+                                       to enhance productivity and innovation as a developer.' alt='AI for Developers Masterclass'
                         />
                     </div>
                 </div>

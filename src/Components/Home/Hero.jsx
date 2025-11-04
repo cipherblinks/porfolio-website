@@ -45,7 +45,7 @@ function Hero() {
 
                     <div className="absolute h-[16px] w-[16px] md:h-[32px] md:w-[32px] top-0 right-[28px] md:right-[-15px] md:top-[50px]">
                         <div className="absolute inset-0">
-                            <img src={logoIcon} alt="" className="w-full h-full object-center object-cover" />
+                            <img src={logoIcon} alt="icon" className="w-full h-full object-center object-cover" />
                         </div>
                     </div>
                     <div className="flex flex-col justify-start shrink-0 self-stretch relative h-auto w-full md:w-auto whitespace-pre-wrap wrap-break-word max-w-[520px] lg:max-w-lg">

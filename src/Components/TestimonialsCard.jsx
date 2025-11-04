@@ -10,7 +10,7 @@ function TestimonialsCard(props) {
                                     z-10 absolute top-40 right-[-40px] overflow-visible"></div>
 
                 <div className="h-[48px] relative w-[48px] rounded-[999px] overflow-hidden">
-                    <img src={props.image} alt="" className="w-full h-full object-center object-cover" />
+                    <img src={props.image} alt="Testimonials Icon" className="w-full h-full object-center object-cover" />
                 </div>
                 <div className="flex">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#ff4625" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ff4625" className="h-[19px] w-[16px]">
