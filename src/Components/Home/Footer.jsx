@@ -148,7 +148,7 @@ function Footer() {
                             </p>
                         </div>
                         <div className="h-[42px] relative w-[42px] rounded-[999px] overflow-hidden bg-black shrink-0">
-                            <img src={footerImage} alt="Footer Profile Image" className="w-full h-full object-center object-cover shrink-0" />
+                            <img src={footerImage} alt="Footer Profile" className="w-full h-full object-center object-cover shrink-0" />
                         </div>
                         <div>
                             <p className="text-xs md:text-sm font-mono">Blinks</p>
