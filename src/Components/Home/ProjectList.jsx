@@ -81,13 +81,13 @@ function ProjectList() {
                             </div>
                         </section>
                     </a>
-                    {/* on hover display image */}
-                    <div className="flex items-center justify-center">
-                        <h1 className="text-white font-serif text-2xl md:text-4xl font-bold tracking-tighter absolute top-0 opacity-20 techStack">
-                            Tech Stack
-                        </h1>
-                    </div>
                 </div>
+            </div>
+            {/* on hover display image */}
+            <div className="flex items-center justify-center techStack1">
+                <h1 className="text-white font-serif text-2xl md:text-4xl font-bold tracking-tighter absolute right-[43.7%] opacity-20 techStack -z-10">
+                    Tech Stack
+                </h1>
             </div>
         </section>
     )
