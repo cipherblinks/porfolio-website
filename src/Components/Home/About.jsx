@@ -80,14 +80,16 @@ function About() {
 
                         <div className="flex flex-col gap-5 w-full">
                             <p className="text-[rgba(255,255,255,.7)] text-sm md:text-base font-light md:font-semibold leading-[1.4em] tracking-tight">
-                                Throughout my career, I’ve had the privilege of working with both rising startups and industry leaders,
-                                including <span className="text-white font-bold">Apple, Tesla</span><strong className="text-base font-semibold">, and </strong><span className="text-white font-bold">Stripe.</span> These experiences have shaped my perspective on innovation, efficiency, and user-centric design.
+                                I’m a website developer from Nigeria passionate about crafting digital experiences that are both functional and visually engaging.
+                                Over the years, I’ve collaborated with various <span className="text-white font-bold">individuals, brands</span><strong className="text-base font-semibold">, and </strong>
+                                <span className="text-white font-bold">startups.</span> helping them turn ideas into clean, user-friendly web solutions that perform.
                             </p>
                             <p className="text-[rgba(255,255,255,.7)] text-sm md:text-base font-light md:font-semibold leading-[1.4em] tracking-tight">
-                                What sets my work apart is my intentional approach, the method of designing meaningful interfaces that drive results.
+                                What sets my work apart is my intentional approach I don’t just build websites; I design meaningful interfaces that connect with users and drive real results.
                             </p>
                             <p className="text-[rgba(255,255,255,.7)] text-sm md:text-base font-light md:font-semibold leading-[1.4em] tracking-tight">
-                                My journey with product design started in a quite surprising way, it had begun after watching a science fiction movie.
+                                My journey into web development started unexpectedly, after watching a science fiction movie, I became fascinated by how technology could bring imagination to life.
+                                That spark turned into a passion, and ever since, I’ve been building, learning, and evolving through code and creativity.
                             </p>
                         </div>
                         <Button name='Know the full story' icon={true} />

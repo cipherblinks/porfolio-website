@@ -69,7 +69,7 @@ function Hero() {
                 </div>
                 {/* <!-- gradient fade --> */}
                 <div
-                    className="bg-linear-to-b from-transparent to-black h-[80px] absolute overflow-hidden bottom-0 right-0 z-20 w-full">
+                    className="bg-linear-to-b from-transparent to-black h-[80px] absolute overflow-hidden bottom-0 -right-30 z-10 w-full">
                 </div>
 
                 <div className="h-[98vh] left-[calc(50%-1216px/2)] overflow-hidden top-0 w-[1216px] absolute">
@@ -104,7 +104,7 @@ function Hero() {
                 </div>
                 <div className="h-[80vh] opacity-[.8] md:h-screen overflow-hidden w-full absolute top-0 -right-[112px] md:-right-[302px] lg:-right-[262px]">
                     <div className="absolute inset-0">
-                        <img src={heroImage} alt="Profile" className="block w-full h-full object-center object-cover md:object-contain " />
+                        <img src={heroImage} alt="Profile" className="block w-full h-full object-center object-cover md:object-contain" />
                     </div>
 
                 </div>

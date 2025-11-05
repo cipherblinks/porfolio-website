@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import CustomCursor from "../CustomCursor";
+import CustomCursor from "./CustomCursor";
 
 function WorkFeatures(props) {
     const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);

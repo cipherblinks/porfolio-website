@@ -20,8 +20,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    perspective: 1000px;
-    transform-style: preserve-3d;
   }
 }
 
@@ -123,6 +121,7 @@
 .scroll-container:hover {
   filter: blur(7px);
 }
+
 
 .mask-fade-x {
   mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgb(0,0,0) 25%, rgb(0,0,0) 75%, rgba(0,0,0,0) 100%);

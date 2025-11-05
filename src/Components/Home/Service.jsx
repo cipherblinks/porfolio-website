@@ -28,12 +28,12 @@ function Service() {
                     </h5>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-20 md:gap-10 lg:gap-15">
+                <div className="flex flex-col lg:flex-row gap-20 md:gap-10 lg:gap-5">
                     <div className="flex flex-col gap-5">
                         <div>
                             <img src={frontendLogo} alt="Frontend Icon" className="h-16" />
                         </div>
-                        <div className="flex flex-col gap-2 w-full md:max-w-7xl">
+                        <div className="flex flex-col gap-2">
                             <h5 className="font-bold text-2xl lg:text-[32px] leading-[1.4em] font-[Inter_Display]">Frontend Development</h5>
                             <p className="text-sm font-semibold leading-[1.4em] tracking-tight text-[rgba(255,255,255,0.6)] whitespace-pre-wrap line-clamp-4">
                                 Frontend Web Expert building custom, high-converting websites that blend beautiful design with powerful functionality.
@@ -49,7 +49,7 @@ function Service() {
                         <div>
                             <img src={backendLogo} alt="Backend Icon" className="h-16" />
                         </div>
-                        <div className="flex flex-col gap-2 w-full md:max-w-7xl">
+                        <div className="flex flex-col gap-2 ">
                             <h5 className="font-bold text-2xl lg:text-[32px] leading-[1.4em] font-[Inter_Display]">Backend Development</h5>
                             <p className="text-sm font-semibold leading-[1.4em] tracking-tight text-[rgba(255,255,255,0.6)] line-clamp-4 whitespace-pre-wrap">
                                 Backend Developer focused on building scalable, secure, and high-performance systems.
@@ -65,7 +65,7 @@ function Service() {
                         <div>
                             <img src={aiLogo} alt="SEO Performance Icon" className="h-16" />
                         </div>
-                        <div className="flex flex-col gap-2 w-full md:max-w-7xl">
+                        <div className="flex flex-col gap-2">
                             <h5 className="font-bold text-2xl lg:text-[32px] leading-[1.4em] font-[Inter_Display]">SEO Performance</h5>
                             <p className="text-sm font-semibold leading-[1.4em] tracking-tight text-[rgba(255,255,255,0.6)] line-clamp-4 whitespace-pre-wrap">
                                 Boost visibility. Drive results.

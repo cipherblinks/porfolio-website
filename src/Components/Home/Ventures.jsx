@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { animateEachSectionUp, scrollAnimateText } from "../..";
-import CustomCursor from "../CustomCursor";
+import CustomCursor from "./CustomCursor";
 import VenturesCard from "../VenturesCard";
 import logoIcon from "/src/assets/images/logo.svg";
 import veturesImage1 from '/src/assets/images/ai.avif'

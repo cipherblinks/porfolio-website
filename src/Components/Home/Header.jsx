@@ -11,7 +11,7 @@ function Header() {
 
     return (
         <>
-            <header className="flex-none h-[48px] lg:h-[64px] left-[8px] md:left-0 overflow-visible fixed right-[8px] md:right-0 top-[15px] lg:top-[40px] z-10">
+            <header className="h-[48px] lg:h-[64px] left-[8px] md:left-0 overflow-visible fixed right-[8px] md:right-0 top-[15px] lg:top-[40px] z-10">
                 {/* <!-- navbar --> */}
                 <div className="inset-y-0 md:inset-x-[16px] absolute w-full md:w-auto">
                     <nav className="flex items-center justify-center flex-nowrap p-0 relative h-full w-full">
