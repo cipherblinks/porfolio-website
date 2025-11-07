@@ -1,6 +1,6 @@
 import Button from "./Button"
 import logoIcon from "/src/assets/images/logo.svg";
-import footerImage from '/src/assets/images/hero-image.png'
+import footerImage from '/src/assets/images/hero-image.avif'
 
 function Footer() {
     return (

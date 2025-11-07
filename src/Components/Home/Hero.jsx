@@ -2,7 +2,7 @@ import { useEffect } from "react"
 import { animateText } from "../.."
 import Button from "./Button"
 import logoIcon from "/src/assets/images/logo.svg";
-import heroImage from '/src/assets/images/hero-image.png'
+import heroImage from '/src/assets/images/hero-image.avif'
 
 function Hero() {
     useEffect(() => {
@@ -101,30 +101,6 @@ function Hero() {
                         <div className="bg-white/10 h-full w-px relative overflow-visible"></div>
                         <div className="bg-white/10 h-full w-px relative overflow-visible"></div>
                     </div>
-                </div>
-                {/* background text */}
-                <div className="absolute bottom-[50%] w-full hidden lg:block">
-                    <h1 className="text-white font-serif text-2xl md:text-9xl font-bold tracking-tighter opacity-5 uppercase">
-                        <span className="whitespace-nowrap">
-                            <span className="text-5xl md:text-9xl">C</span>
-                            <span className="text-5xl md:text-9xl">i</span>
-                            <span className="text-5xl md:text-9xl">h</span>
-                            <span className="text-5xl md:text-9xl">e</span>
-                            <span className="text-5xl md:text-9xl">r</span>
-                            <span className="text-5xl md:text-9xl">b</span>
-                            <span className="text-5xl md:text-9xl">l</span>
-                        </span>
-                    </h1>
-                </div>
-                <div className="absolute bottom-[50%] left-[88%] w-full hidden lg:block">
-                    <h1 className="text-white font-serif text-2xl md:text-9xl font-bold tracking-tighter opacity-5 uppercase">
-                        <span className="whitespace-nowrap">
-                            <span className="text-5xl md:text-9xl">i</span>
-                            <span className="text-5xl md:text-9xl">n</span>
-                            <span className="text-5xl md:text-9xl">k</span>
-                            <span className="text-5xl md:text-9xl">s</span>
-                        </span>
-                    </h1>
                 </div>
                 <div className="h-[80vh] opacity-[.8] md:h-screen overflow-hidden w-full absolute top-0 -right-[112px] md:-right-[302px] lg:-right-[262px]">
                     <div className="absolute inset-0">
